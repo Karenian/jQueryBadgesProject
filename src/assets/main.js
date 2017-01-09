@@ -9,7 +9,7 @@ $(function() {
             {
                 $('#badges')
                     .append($('<div>').addClass('course')
-                        .append($('<h3>').attr('title', courses[i].title))
+                        .append($('<h3>').attr('title', courses[i].title).text(courses[i].title))
                         .append($('<img>').attr('src', courses[i].badge))
                         .append($('<a>').attr({ href: courses[i].url, target: '_blank' }).addClass('btn btn-primary')));
             }
